@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <title>quiz</title>
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="quiz">
+      <div class="quiz__body">
+        <h2 class="quiz__body-title">Викторина</h2>
+        <p class="quiz__body-question">
+          Это вопрос викторины. Выберете, пожалуйста, один из вариантов внизу
+          или перейдите к следующему вопросу.
+        </p>
+        <div class="quiz__body-btns">
+          <div class="quiz__body-variants"></div>
+          <button class="btn quiz__body-next">Следующий вопрос</button>
+        </div>
+        <div class="quiz__footer">
+          <div class="quiz__count">
+            <span>количество верных ответов:</span><span class="answ">0</span> /
+            <span>количество вопросов:</span><span class="que">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="quiz__header">
+        <h3>Условия проведения викторины</h3>
+        <div class="quiz__terms" id="terms">
+          <p>
+            1) Вопросы викторины должны появляться последовательно, после ответа
+            на один вопрос, должен появляться следующий, либо участник должен
+            иметь возможность пропустить вопрос.
+          </p>
+          <p>
+            2) Добавление в викторину возможности прохождения возможно только в
+            заданный редактором сайта период времени.
+          </p>
+          <p>
+            3) Добавление в викторину возможности ограничения времени на каждый
+            вопрос (время ограничения устанавливает редактор сайта). Если
+            участник не успел ответить на вопрос, то ответ не засчитывается и
+            перед участником открывается следующий вопрос.
+          </p>
+          <p>
+            4) Должна быть возможность включать отображение результата викторины
+            участнику, чтобы он видел свой результат. Результат выводится в
+            виде: «количество верных ответов» из «количество вопросов». И если
+            было включено ограничение по времени, то и количество затраченного
+            времени.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
